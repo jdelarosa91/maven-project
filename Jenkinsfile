@@ -23,7 +23,7 @@ pipeline {
 					timeout(time:5, unit:'DAYS'){
 						imput message: 'Aprove PRODUCTION Deployment?'
 					}
-					build job 'deplot-to-prod'
+					build job 'deploy-to-prod'
 				}
 				post{
 					success{
